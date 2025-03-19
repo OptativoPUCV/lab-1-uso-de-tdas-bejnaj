@@ -2,3 +2,15 @@ Wed, Mar 19, 2025  8:33:22 AM:
  tests:  0|5
 total_score: 0/70
 3f6cb15
+Wed, Mar 19, 2025  9:40:14 AM: 
+ exercises.c | 13 ++++++++++++-
+ 1 file changed, 12 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaLista':
+exercises.c:63:15: error: dereferencing 'void *' pointer [-Werror]
+       suma += *(elemento);
+               ^~~~~~~~~~~
+exercises.c:63:15: error: void value not ignored as it ought to be
+cc1.exe: all warnings being treated as errors
+Compilation failed
+2d2c569
