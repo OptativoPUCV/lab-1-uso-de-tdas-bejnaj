@@ -98,3 +98,11 @@ exercises.c:64:12: error: assignment to 'int' from 'int *' makes integer from po
       |            ^~
 Compilation failed
 a26e584
+Thu, Mar 20, 2025  5:09:47 PM: 
+In file included from test.c:5:
+exercises.c: In function 'sumaLista':
+exercises.c:64:12: error: assignment to 'int' from 'int *' makes integer from pointer without a cast [-Wint-conversion]
+   64 |       suma += (elemento);
+      |            ^~
+Compilation failed
+eb8bafe
