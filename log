@@ -119,3 +119,13 @@ Thu, Mar 20, 2025  5:10:48 PM:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 6b3a7aa
+Thu, Mar 20, 2025  5:13:43 PM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function 'sumaLista':
+exercises.c:64:12: error: assignment to 'int' from 'int *' makes integer from pointer without a cast [-Wint-conversion]
+   64 |       suma += (elemento);
+      |            ^~
+Compilation failed
+a155795
