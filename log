@@ -114,3 +114,8 @@ exercises.c:64:12: error: assignment to 'int' from 'int *' makes integer from po
       |            ^~
 Compilation failed
 961c61b
+Thu, Mar 20, 2025  5:10:48 PM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+6b3a7aa
