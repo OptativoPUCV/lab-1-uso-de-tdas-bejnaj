@@ -134,3 +134,13 @@ Thu, Mar 20, 2025  5:14:05 PM:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 e4e75c1
+Thu, Mar 20, 2025  5:20:16 PM: 
+ exercises.c | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function 'eliminaElementos':
+exercises.c:84:4: error: expected statement before ']' token
+   84 |    ]
+      |    ^
+Compilation failed
+e4f72c2
