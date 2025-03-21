@@ -246,3 +246,17 @@ exercises.c:103:16: error: invalid use of void expression
 cc1.exe: all warnings being treated as errors
 Compilation failed
 2e345d8
+Thu, Mar 20, 2025 10:14:29 PM: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function 'copia_pila':
+exercises.c:96:30: error: comparison between pointer and integer [-Werror]
+   96 |    while (*((int *)elemento) != NULL){
+      |                              ^~
+exercises.c:102:30: error: comparison between pointer and integer [-Werror]
+  102 |    while (*((int *)elemento) != NULL){
+      |                              ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+5619a08
