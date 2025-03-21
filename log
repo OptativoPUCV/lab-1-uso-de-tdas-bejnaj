@@ -276,3 +276,9 @@ exercises.c:102:11: error: void value not ignored as it ought to be
 cc1.exe: all warnings being treated as errors
 Compilation failed
 7b8fd9f
+Thu, Mar 20, 2025 10:15:48 PM: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  6|2
+total_score: 50/70
+01c7270
