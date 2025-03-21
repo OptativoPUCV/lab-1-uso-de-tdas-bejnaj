@@ -117,13 +117,15 @@ int parentesisBalanceados(char *cadena) {
    Stack* pilaParentesis = create_stack();
    for (int i = 0; cadena[i] != '\0'; i++) {
       char caracter = cadena[i];
-      if (caracter == '(') {
+      if (caracter == '(' || caracter == '{' || caracter == '[') {
          char* caracterPila = (char*)malloc(sizeof(char));
          *caracterPila = caracter;
          push(pilaParentesis, caracterPila);
       }
-      else if (caracter == ')'){
-         if (top(pilaParentesis) == NULL) return 0;
+      else if (caracter == ')' || caracter == '}' || caracter == ']'){
+         if (caracter == ')' && (char*)top(pilaParentesis) != '(') return 0;
+         else if (caracter == '}' && (char*)top(pilaParentesis) != '{') return 0;
+         else if (caracter == ']' && (char*)top(pilaParentesis) != '[') return 0;
          pop(pilaParentesis);
       }
    }

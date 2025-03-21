@@ -282,3 +282,20 @@ Thu, Mar 20, 2025 10:15:48 PM:
  tests:  6|2
 total_score: 50/70
 01c7270
+Thu, Mar 20, 2025 10:21:58 PM: 
+ exercises.c | 8 +++++---
+ 1 file changed, 5 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:126:60: error: comparison between pointer and integer [-Werror]
+  126 |          if (caracter == ')' && (char*)top(pilaParentesis) != '(') return 0;
+      |                                                            ^~
+exercises.c:127:65: error: comparison between pointer and integer [-Werror]
+  127 |          else if (caracter == '}' && (char*)top(pilaParentesis) != '{') return 0;
+      |                                                                 ^~
+exercises.c:128:65: error: comparison between pointer and integer [-Werror]
+  128 |          else if (caracter == ']' && (char*)top(pilaParentesis) != '[') return 0;
+      |                                                                 ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+2cff2c9
