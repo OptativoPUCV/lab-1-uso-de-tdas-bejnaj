@@ -123,9 +123,9 @@ int parentesisBalanceados(char *cadena) {
          push(pilaParentesis, caracterPila);
       }
       else if (caracter == ')' || caracter == '}' || caracter == ']'){
-         if (caracter == ')' && (char*)top(pilaParentesis) != '(') return 0;
-         else if (caracter == '}' && (char*)top(pilaParentesis) != '{') return 0;
-         else if (caracter == ']' && (char*)top(pilaParentesis) != '[') return 0;
+         if (caracter == ')' && *((char*)top(pilaParentesis)) != '(') return 0;
+         else if (caracter == '}' && *((char*)top(pilaParentesis)) != '{') return 0;
+         else if (caracter == ']' && *((char*)top(pilaParentesis)) != '[') return 0;
          pop(pilaParentesis);
       }
    }
