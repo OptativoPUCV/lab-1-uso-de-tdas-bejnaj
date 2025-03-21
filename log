@@ -192,3 +192,34 @@ stack.h:11:31: note: expected 'void *' but argument is of type 'int'
 cc1.exe: all warnings being treated as errors
 Compilation failed
 9f99ebf
+Thu, Mar 20, 2025 10:12:29 PM: 
+ exercises.c | 18 ++++++++++++++++--
+ 1 file changed, 16 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function 'copia_pila':
+exercises.c:96:23: error: comparison between pointer and integer [-Werror]
+   96 |    while (*(elemento) != NULL){
+      |                       ^~
+exercises.c:97:22: error: passing argument 2 of 'push' makes pointer from integer without a cast [-Wint-conversion]
+   97 |       push(auxStack, *(elemento));
+      |                      ^~~~~~~~~~~
+      |                      |
+      |                      int
+In file included from exercises.c:7:
+stack.h:11:31: note: expected 'void *' but argument is of type 'int'
+   11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
+      |                         ~~~~~~^~~~
+exercises.c:102:23: error: comparison between pointer and integer [-Werror]
+  102 |    while (*(elemento) != NULL){
+      |                       ^~
+exercises.c:103:16: error: passing argument 2 of 'push' makes pointer from integer without a cast [-Wint-conversion]
+  103 |       push(P2, *(elemento));
+      |                ^~~~~~~~~~~
+      |                |
+      |                int
+stack.h:11:31: note: expected 'void *' but argument is of type 'int'
+   11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
+      |                         ~~~~~~^~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+43b5d1b
