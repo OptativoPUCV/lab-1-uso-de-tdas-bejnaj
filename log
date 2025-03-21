@@ -260,3 +260,19 @@ exercises.c:102:30: error: comparison between pointer and integer [-Werror]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 5619a08
+Thu, Mar 20, 2025 10:15:24 PM: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function 'copia_pila':
+exercises.c:96:11: error: dereferencing 'void *' pointer [-Werror]
+   96 |    while (*(elemento) != NULL){
+      |           ^~~~~~~~~~~
+exercises.c:96:11: error: void value not ignored as it ought to be
+exercises.c:102:11: error: dereferencing 'void *' pointer [-Werror]
+  102 |    while (*(elemento) != NULL){
+      |           ^~~~~~~~~~~
+exercises.c:102:11: error: void value not ignored as it ought to be
+cc1.exe: all warnings being treated as errors
+Compilation failed
+7b8fd9f
